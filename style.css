@@ -1,0 +1,335 @@
+@import url("https://fonts.cdnfonts.com/css/common-pixel");
+body {
+  background: #b5213c;
+}
+
+h1 {
+  font-family: "Common Pixel", sans-serif;
+}
+
+.header {
+  text-align: center;
+  position: relative;
+  margin: 50px auto;
+}
+
+.heart {
+  position: absolute;
+  left: 46.5%;
+  display: block;
+  width: 1em;
+  height: 1em;
+  box-shadow: 1em 0em #F22613, 2em 0em #F22613, 4em 0em #F22613, 5em 0em #F22613, 0em 1em #F22613, 1em 1em #F22613, 2em 1em #F22613, 3em 1em #F22613, 4em 1em #F22613, 5em 1em #F22613, 6em 1em #F22613, 0em 2em #F22613, 1em 2em #F22613, 2em 2em #F22613, 3em 2em #F22613, 4em 2em #F22613, 5em 2em #F22613, 6em 2em #F22613, 1em 3em #F22613, 2em 3em #F22613, 3em 3em #F22613, 4em 3em #F22613, 5em 3em #F22613, 2em 4em #F22613, 3em 4em #F22613, 4em 4em #F22613, 3em 5em #F22613;
+}
+
+span {
+  display: inline-block;
+  position: absolute;
+  background: #faa;
+  height: 3px;
+  left: 50%;
+}
+
+span.top {
+  width: 70px;
+  top: 20px;
+}
+
+span.bottom {
+  width: 120px;
+  top: 35px;
+}
+
+span.left {
+  transform: translateX(-150px);
+}
+
+span.bottom.left {
+  transform: translateX(-200px);
+}
+
+span.right {
+  transform: translateX(80px);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+.slider {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  box-shadow: rgb(218, 210, 210) 0px 25px 50px -10px, rgb(233, 226, 226) 0px 15px 30px -15px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  position: absolute;
+  top: 25vh;
+  left: 10%;
+  background: white;
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+  width: 80vw;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 300px;
+  position: absolute;
+  width: 75px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+.slider .slider-photo {
+  width: 250px;
+  height: 300px;
+}
+
+.arrowSet1 {
+  position: absolute;
+  top: 75vh;
+  left: 30vw;
+}
+
+.arrowHead {
+  width: 4vw;
+  height: 8vh;
+  rotate: 180deg;
+}
+
+.one {
+  position: absolute;
+  top: 10vh;
+  left: 6vw;
+}
+
+.two {
+  position: absolute;
+  left: 30vw;
+  top: 5vh;
+}
+
+.three {
+  position: absolute;
+  left: -10vw;
+  top: -2vh;
+}
+
+.four {
+  position: absolute;
+  left: 40vw;
+  top: -8vh;
+}
+
+.welcome-container {
+  position: absolute;
+  text-align: center;
+  top: 110vh;
+  left: 30vw;
+  line-height: 4vh;
+}
+
+.welcome-photos {
+  border: none;
+  position: absolute;
+  top: 130vh;
+  left: 25vw;
+  height: 40vh;
+  width: 50vw;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+  box-shadow: rgb(0, 0, 0) 0px 50px 100px -20px, black 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.inner-photo {
+  position: absolute;
+  top: 135vh;
+  left: 28vw;
+  height: 30vh;
+  width: 13vw;
+  border-radius: 50%;
+  rotate: -5deg;
+}
+
+.ip2 {
+  left: 45vw;
+  rotate: 0deg;
+}
+
+.ip3 {
+  left: 60vw;
+  rotate: 5deg;
+}
+
+.butters {
+  position: absolute;
+  top: 135vh;
+  left: 10vw;
+  width: 8vw;
+}
+
+.arrowSet2 {
+  position: absolute;
+  top: 145vh;
+}
+
+.arrowHead2 {
+  width: 4vw;
+  height: 8vh;
+  rotate: 180deg;
+}
+
+.one2 {
+  position: absolute;
+  left: 75vw;
+  top: 20vh;
+  rotate: 170deg;
+}
+
+.two2 {
+  position: absolute;
+  left: 80vw;
+  top: 24vh;
+  rotate: 160deg;
+}
+
+.three2 {
+  position: absolute;
+  left: 84vw;
+  top: 30vh;
+  rotate: 165deg;
+}
+
+.four2 {
+  position: absolute;
+  left: 85vw;
+  top: 40vh;
+}
+
+.five {
+  position: absolute;
+  left: 85vw;
+  top: 50vh;
+}
+
+.welcome2-container {
+  position: absolute;
+  text-align: center;
+  top: 210vh;
+  left: 50vw;
+  line-height: 4vh;
+}
+
+.vid {
+  position: absolute;
+  left: 30vw;
+  top: 230vh;
+}
+
+.wendy {
+  position: absolute;
+  height: 25vh;
+  width: 10vw;
+  left: 15vw;
+  top: 210vh;
+}
+
+.arrowHead3 {
+  width: 4vw;
+  height: 8vh;
+  rotate: 180deg;
+}
+
+.arrowSet3 {
+  position: absolute;
+  left: 5vw;
+  top: 275vh;
+}
+
+.one3 {
+  position: absolute;
+  top: -15vh;
+  left: 15vw;
+}
+
+.two3 {
+  position: absolute;
+  top: -10vh;
+  left: 10vw;
+}
+
+.three3 {
+  position: absolute;
+  top: 0vh;
+  left: 15vw;
+}
+
+.four3 {
+  position: absolute;
+  top: 5vh;
+  left: 10vw;
+}
+
+.five3 {
+  position: absolute;
+  left: 15vw;
+  top: 15vh;
+  rotate: 160deg;
+}
+
+.welcome3-container {
+  position: absolute;
+  top: 305vh;
+  text-align: center;
+  left: 35vw;
+  line-height: 5vh;
+}
+
+.last-prom {
+  position: absolute;
+  top: 335vh;
+  left: 39vw;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: rgb(218, 210, 210) 0px 25px 50px -10px, rgb(233, 226, 226) 0px 15px 30px -15px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.heart2 {
+  position: absolute;
+  top: 335vh;
+  left: 25vw;
+  rotate: -15deg;
+}
+
+.heart3 {
+  position: absolute;
+  top: 350vh;
+  left: 70vw;
+  rotate: 25deg;
+}
+
+.heart4 {
+  position: absolute;
+  top: 385vh;
+  left: 30vw;
+  rotate: -10deg;
+}/*# sourceMappingURL=style.css.map */
